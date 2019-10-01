@@ -1,0 +1,25 @@
+raspberry pi
+
+drawing with a turtle
+
+///////////
+from turtle import Turtle, Screen
+from turtle import *
+
+
+turtle = Turtle()
+screen = Screen()
+
+for w in range(20):
+
+  for e in range(360):
+    turtle.forward(1)
+    turtle.right(1)
+
+  turtle.right(5)
+  
+
+  for e in range(360):
+    turtle.forward(1)
+    turtle.right(1)
+///////////
