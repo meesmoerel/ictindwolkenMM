@@ -1,3 +1,5 @@
+
+
 raspberry pi
 
 drawing with a turtle
@@ -23,3 +25,57 @@ for w in range(20):
     turtle.forward(1)
     turtle.right(1)
 ///////////
+
+
+
+
+rock paper scissors game tegen de computer. met art.
+
+//////////
+#!/bin/python3
+
+from random import randint
+
+player = input('rock (r), paper (p) or scissors(s)?')
+if player == 'r':
+  print('O', 'vs', end=' ')
+if player == 's':
+  print('8<', 'vs', end=' ')
+if player == 'p':
+  print('[]', 'vs', end=' ')
+
+
+
+chosen = randint(1,3)
+#print(chosen)
+
+if chosen == 1:
+  computer = 'r'
+  print('O', end=' ')
+
+elif chosen == 2:
+  computer = 'p'
+  print('[]', end=' ')
+  
+else:
+  computer = 's'
+  print('8<', end=' ')
+  
+
+if player == computer:
+  print('Draw')
+elif player == 'r' and computer == 's':
+  print('Player wins!')
+elif player is 's' and computer == 'r':
+  print('computerwins, en jij verliest loser.')
+elif player is 'p' and computer == 'r':
+  print('Player wins')
+  
+elif player is 'p' and computer == 's':
+  print('computer wins')
+elif player is 's' and computer == 'p':
+  print('player wins')
+elif player is 'r' and computer == 'p':
+  print('computer wins')
+  
+////////////
