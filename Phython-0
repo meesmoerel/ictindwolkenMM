@@ -9,19 +9,19 @@ from turtle import Turtle, Screen
 from turtle import *
 
 
-turtle = Turtle()
+turtle = Turtle()         
 screen = Screen()
 
 for w in range(20):
 
-  for e in range(360):
+  for e in range(360):        // circel maken//
     turtle.forward(1)
     turtle.right(1)
 
-  turtle.right(5)
+  turtle.right(5)             // verplaatsen van circel//
   
 
-  for e in range(360):
+  for e in range(360):        // circel maken naast andere circel//
     turtle.forward(1)
     turtle.right(1)
 ///////////
@@ -34,19 +34,19 @@ rock paper scissors game tegen de computer. met art.
 //////////
 #!/bin/python3
 
-from random import randint
+from random import randint            
 
-player = input('rock (r), paper (p) or scissors(s)?')
+player = input('rock (r), paper (p) or scissors(s)?')           //speler moet rsp in voeren//
 if player == 'r':
   print('O', 'vs', end=' ')
 if player == 's':
   print('8<', 'vs', end=' ')
 if player == 'p':
-  print('[]', 'vs', end=' ')
+  print('[]', 'vs', end=' ')        // art maken //
 
 
 
-chosen = randint(1,3)
+chosen = randint(1,3)           //keuze van de computer maken//
 #print(chosen)
 
 if chosen == 1:
@@ -62,7 +62,7 @@ else:
   print('8<', end=' ')
   
 
-if player == computer:
+if player == computer:                                // uitslag van spelletje op scherm weergeven.
   print('Draw')
 elif player == 'r' and computer == 's':
   print('Player wins!')
