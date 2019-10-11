@@ -79,3 +79,25 @@ elif player is 'r' and computer == 'p':
   print('computer wins')
   
 ////////////
+
+
+wachtwoord maker.
+
+////////////
+#!/bin/python3
+
+import random
+letters = 'abcdefghijklmnopqrstuvwxys1234567890QWERTYUIOPLKHJGFDSAZXCVBNM)(*&^%$#@!~:;><.,/?+=_-\|'
+lengte = input('password lengte')       //lente van wachtwoord //
+lengte = int(lengte)
+hoeveelheid = input('password hoeveelheid')         // hoeveelheid van wachtwoorden
+hoeveelheid = int(hoeveelheid)
+
+
+for p in range(hoeveelheid):            // het maken van het wachtwoord.//
+  password = ''
+  for c in range(lengte):
+   password += random.choice(letters)
+  print(password)
+  
+  //////////
